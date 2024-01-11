@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ModalTest.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ModalTest"
+    Shell.FlyoutBehavior="Disabled"
+    Title="ModalTest">
+
+	<TabBar>
+        <Tab Title="First"
+             Route="MainPage1">
+            <ShellContent
+		        Title="MainPage 1"
+		        ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+		
+		<Tab Title="Second"
+             Route="MainPage2">
+            <ShellContent
+		        Title="MainPage 2"
+		        ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+    </TabBar>
+	
+    
+
+</Shell>
